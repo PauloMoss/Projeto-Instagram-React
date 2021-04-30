@@ -2,11 +2,13 @@ import PerfilDoUsuario from './Usuario';
 import Sugestoes from './Sugestoes';
 
 export default function Sidebar() {
+
+    const dadosDoUsuario = {nome: "Catana", apelido: "catanacomics", imagem: "assets/img/catanacomics.svg"};
     
     return(
         <div class="sidebar">
             
-            <PerfilDoUsuario />
+            <PerfilDoUsuario nome={dadosDoUsuario.nome} apelido={dadosDoUsuario.apelido} imagem={dadosDoUsuario.imagem} />
 
             <Sugestoes />
 

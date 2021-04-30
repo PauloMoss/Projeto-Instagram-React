@@ -1,3 +1,5 @@
+import Acoes from './Icones';
+
 export default function Post(props) {
     return(
         <div class="post">
@@ -16,17 +18,8 @@ export default function Post(props) {
             </div>
 
             <div class="fundo">
-                <div class="acoes">
-                    <div>
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="paper-plane-outline"></ion-icon>
-                    </div>
-                    <div>
-                        <ion-icon name="bookmark-outline"></ion-icon>
-                    </div>
-                </div>
-
+                
+                <Acoes />
                 <div class="curtidas">
                     <img src="assets/img/respondeai.svg" />
                     <div class="texto">

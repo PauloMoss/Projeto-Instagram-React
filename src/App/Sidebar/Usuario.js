@@ -1,14 +1,12 @@
 
-export default function PerfilDoUsuario() {
-
-    const dadosDoUsuario = {nome: "Catana", apelido: "catanacomics", imagem: "assets/img/catanacomics.svg"};
+export default function PerfilDoUsuario(props) {
 
     return (
         <div class="usuario">
-            <img src={dadosDoUsuario.imagem} />
+            <img src={props.imagem} />
             <div class="texto">
-                <strong>{dadosDoUsuario.apelido}</strong>
-                {dadosDoUsuario.nome}
+                <strong>{props.apelido}</strong>
+                {props.nome}
             </div>
         </div>
     );
